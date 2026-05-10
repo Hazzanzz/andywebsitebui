@@ -366,7 +366,7 @@ function Skills() {
           ))}
         </div>
         <motion.div layout className="flex flex-wrap gap-2.5 justify-center mt-10">
-          {skills.map(({ s, cat }) => (
+          {skills.map(({ s, cat }: { s: string; cat: string }) => (
             <motion.span layout key={s + cat}
               initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }}
               className="px-4 py-2 glass rounded-xl text-sm hover:border-[var(--neon-cyan)]/60 hover:shadow-neon hover:-translate-y-0.5 transition cursor-default">
