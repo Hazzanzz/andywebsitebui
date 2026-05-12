@@ -490,63 +490,12 @@ function Strengths() {
   );
 }
 
-const PROJECTS = [
-  { icon: Printer, title: "3D Printing & Printer Repair", color: "var(--neon-violet)",
-    desc: "Building, upgrading, repairing, and maintaining 3D printers. Slicing, print-quality tuning, troubleshooting, G-Code.",
-    skills: ["3D Printing", "G-Code", "Slicing", "Repair"] },
-  { icon: Car, title: "Vehicle Maintenance & Safety", color: "var(--neon-amber)",
-    desc: "Hands-on inspections, fluid & oil, brake safety, tire changing & balancing, lifting on 2/4-post hoists.",
-    skills: ["Inspection", "Tire Change", "Vehicle Lift", "Brake Safety"] },
-  { icon: Cuboid, title: "CAD/CAM Design", color: "var(--neon-blue)",
-    desc: "3D modeling, CAD, CAM programming, and computer-aided manufacturing for precision design and production.",
-    skills: ["AutoCAD", "Blender", "CAM", "3D Modeling"] },
-  { icon: Bot, title: "Robotics / Mechatronics", color: "var(--neon-cyan)",
-    desc: "Robotics, sensors, mechanical systems, system integration, and prototyping coursework & projects.",
-    skills: ["Robotics", "Sensors", "Prototyping", "Integration"] },
-  { icon: Hammer, title: "Manufacturing & Surface Finishing", color: "var(--neon-teal)",
-    desc: "Production-line experience: surface finishing, inspection, 5S, safety standards, continuous improvement.",
-    skills: ["5S", "Quality", "GMS", "Finishing"] },
-  { icon: ChefHat, title: "Culinary & Butchery Training", color: "var(--neon-violet)",
-    desc: "Trained in butchery, food prep, cooking, cleanliness, food safety, and fast-paced kitchen operations.",
-    skills: ["Butchery", "Cooking", "Food Safety", "Service"] },
-];
+import { ProjectsSection } from "./projects/ProjectsSection";
 
 function Projects() {
-  return (
-    <section id="projects" className="relative py-24 px-4">
-      <div className="max-w-7xl mx-auto">
-        <SectionHeader eyebrow="Focus Areas" title="Projects & Specializations" />
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {PROJECTS.map((p, i) => {
-            const Icon = p.icon;
-            return (
-              <motion.div key={p.title} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }} transition={{ delay: i * 0.06 }}
-                className="glass rounded-2xl p-6 hover-lift group relative overflow-hidden">
-                <div className="absolute -top-12 -right-12 w-48 h-48 rounded-full blur-3xl opacity-30 group-hover:opacity-60 transition" style={{ background: p.color }} />
-                <div className="relative">
-                  <div className="w-14 h-14 rounded-2xl glass-strong grid place-items-center mb-4" style={{ boxShadow: `0 0 25px ${p.color}55` }}>
-                    <Icon className="w-7 h-7" style={{ color: p.color }} />
-                  </div>
-                  <h3 className="font-bold text-lg">{p.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{p.desc}</p>
-                  <div className="flex flex-wrap gap-1.5 mt-4">
-                    {p.skills.map((s) => (
-                      <span key={s} className="text-[10px] px-2 py-1 rounded-md glass border border-white/10">{s}</span>
-                    ))}
-                  </div>
-                  <a href="#contact" className="mt-5 inline-flex items-center gap-1.5 text-sm text-[var(--neon-cyan)] group-hover:gap-2.5 transition-all">
-                    View Details <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
+  return <ProjectsSection />;
 }
+
 
 function Contact() {
   return (
