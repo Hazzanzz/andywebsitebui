@@ -288,13 +288,7 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
                 <div className="pl-0 sm:pl-11">
                   <MediaCarousel
                     items={s.media}
-                    onOpenLightbox={(i) =>
-                      setLightbox({ items: s.media!.filter((m) => m.type === "image"), index: 0 }) ||
-                      setLightbox({
-                        items: s.media!,
-                        index: i,
-                      })
-                    }
+                    onOpenLightbox={(i) => setLightbox({ items: s.media!, index: i })}
                   />
                 </div>
               )}
