@@ -205,25 +205,25 @@ export const PROJECTS: Project[] = [
         media: [
           m(
             "manufacturing-electrical",
-            "Manufacturing, Milling machine (1).mov",
+            "Manufacturing, Milling machine (1).mp4",
             "Milling machine work",
             "video",
           ),
           m(
             "manufacturing-electrical",
-            "Manufacturing, Showing how to use vertical band saw (1).mov",
+            "Manufacturing, Showing how to use vertical band saw (1).mp4",
             "Vertical band saw use",
             "video",
           ),
           m(
             "manufacturing-electrical",
-            "Manufacturing, Learn how to use band saw (1).mov",
+            "Manufacturing, Learn how to use band saw (1).mp4",
             "Learning the band saw",
             "video",
           ),
           m(
             "manufacturing-electrical",
-            "Manufacturing, using oxy fuel torch (1).mov",
+            "Manufacturing, using oxy fuel torch (1).mp4",
             "Oxy-fuel torch",
             "video",
           ),
@@ -235,13 +235,13 @@ export const PROJECTS: Project[] = [
         media: [
           m(
             "manufacturing-electrical",
-            "Electrical, led circuit count (1).mov",
+            "Electrical, led circuit count (1).mp4",
             "LED circuit counter",
             "video",
           ),
           m(
             "manufacturing-electrical",
-            "Electrical, Servo motor control (1).mov",
+            "Electrical, Servo motor control (1).mp4",
             "Servo motor control",
             "video",
           ),
@@ -272,7 +272,7 @@ export const PROJECTS: Project[] = [
         media: [
           m(
             "garage-door",
-            "Explain on how I make the garage door.mov",
+            "Explain on how I make the garage door.mp4",
             "How the garage door was built",
             "video",
           ),
@@ -284,7 +284,7 @@ export const PROJECTS: Project[] = [
         media: [
           m(
             "garage-door",
-            "Final show of how the garage door work.mov",
+            "Final show of how the garage door work.mp4",
             "Garage door in operation",
             "video",
           ),
