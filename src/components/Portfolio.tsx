@@ -504,14 +504,20 @@ function Contact() {
         <SectionHeader eyebrow="Get In Touch" title="Let's Build Something Practical"
           subtitle="Open to engineering opportunities, hands-on technical roles, manufacturing, automotive, 3D printing, and networking." />
         <div className="grid md:grid-cols-[1.2fr_1fr] gap-6 mt-12">
-          <form onSubmit={(e) => { e.preventDefault(); window.location.href = `mailto:${EMAIL}`; }}
+          <form
+            action={`https://formsubmit.co/${EMAIL}`}
+            method="POST"
             className="glass-strong rounded-3xl p-6 md:p-8 space-y-4">
+            <input type="hidden" name="_subject" value="New message from portfolio site" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style={{ display: "none" }} />
             <div className="grid sm:grid-cols-2 gap-4">
-              <input required placeholder="Name" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
-              <input required type="email" placeholder="Email" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
+              <input required name="name" placeholder="Name" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
+              <input required type="email" name="email" placeholder="Email" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
             </div>
-            <input required placeholder="Subject" className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
-            <textarea required rows={5} placeholder="Your message..." className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition resize-none" />
+            <input required name="subject" placeholder="Subject" className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
+            <textarea required rows={5} name="message" placeholder="Your message..." className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition resize-none" />
             <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-cyan)] text-primary-foreground font-semibold shadow-neon hover:scale-[1.02] transition">
               Send Message <ArrowRight className="w-4 h-4" />
             </button>
