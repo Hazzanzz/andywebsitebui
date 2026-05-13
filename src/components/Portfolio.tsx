@@ -504,14 +504,20 @@ function Contact() {
         <SectionHeader eyebrow="Get In Touch" title="Let's Build Something Practical"
           subtitle="Open to engineering opportunities, hands-on technical roles, manufacturing, automotive, 3D printing, and networking." />
         <div className="grid md:grid-cols-[1.2fr_1fr] gap-6 mt-12">
-          <form onSubmit={(e) => { e.preventDefault(); window.location.href = `mailto:${EMAIL}`; }}
+          <form
+            action={`https://formsubmit.co/${EMAIL}`}
+            method="POST"
             className="glass-strong rounded-3xl p-6 md:p-8 space-y-4">
+            <input type="hidden" name="_subject" value="New message from portfolio site" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" style={{ display: "none" }} />
             <div className="grid sm:grid-cols-2 gap-4">
-              <input required placeholder="Name" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
-              <input required type="email" placeholder="Email" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
+              <input required name="name" placeholder="Name" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
+              <input required type="email" name="email" placeholder="Email" className="px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
             </div>
-            <input required placeholder="Subject" className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
-            <textarea required rows={5} placeholder="Your message..." className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition resize-none" />
+            <input required name="subject" placeholder="Subject" className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition" />
+            <textarea required rows={5} name="message" placeholder="Your message..." className="w-full px-4 py-3 rounded-xl bg-input border border-white/10 focus:border-[var(--neon-cyan)] focus:outline-none transition resize-none" />
             <button type="submit" className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[var(--neon-blue)] to-[var(--neon-cyan)] text-primary-foreground font-semibold shadow-neon hover:scale-[1.02] transition">
               Send Message <ArrowRight className="w-4 h-4" />
             </button>
@@ -532,8 +538,7 @@ function Contact() {
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--neon-violet)] to-[var(--neon-amber)] grid place-items-center"><Instagram className="w-5 h-5 text-primary-foreground" /></div>
               <div><div className="text-xs text-muted-foreground">Instagram</div><div className="text-sm font-semibold">@andyvampir1412</div></div>
             </a>
-            {/* Replace this with resume file */}
-            <a href="#" className="flex items-center gap-3 glass rounded-2xl p-4 hover-lift">
+            <a href="/Bui_Resume.pdf" download target="_blank" rel="noreferrer" className="flex items-center gap-3 glass rounded-2xl p-4 hover-lift">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--neon-teal)] to-[var(--neon-blue)] grid place-items-center"><Download className="w-5 h-5 text-primary-foreground" /></div>
               <div><div className="text-xs text-muted-foreground">Resume</div><div className="text-sm font-semibold">Download PDF</div></div>
             </a>
