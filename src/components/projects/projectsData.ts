@@ -515,7 +515,6 @@ export const PROJECTS: Project[] = [
         media: [
           m("culinary", "Making tomato soup.MOV", "Making tomato soup", "video"),
           m("culinary", "Making fried rice.MOV", "Making fried rice", "video"),
-          m("culinary", "Making egg Benedict.MOV", "Making eggs Benedict", "video"),
         ],
       },
       {
