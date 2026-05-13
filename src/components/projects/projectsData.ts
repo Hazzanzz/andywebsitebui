@@ -580,7 +580,10 @@ export const PROJECTS: Project[] = [
       {
         title: "Challenge and Time Pressure",
         text: "The biggest challenge was time — working in Grade 12 alongside college and university applications meant most build hours happened after school, with extra hours close to deadline.",
-        media: [m("robotics-2023", "Team member.JPEG", "Team during build")],
+        media: [
+          m("robotics-2023", "Team member.JPEG", "Team during build"),
+          m("robotics-2023", "Team member1.JPEG", "Team members"),
+        ],
       },
       {
         title: "Technical Problem Faced",
