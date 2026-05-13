@@ -272,7 +272,7 @@ export const PROJECTS: Project[] = [
         media: [
           m(
             "garage-door",
-            "Explain on how I make the garage door.mp4",
+            "Explain on how I make the garage door (1).mp4",
             "How the garage door was built",
             "video",
           ),
@@ -284,7 +284,7 @@ export const PROJECTS: Project[] = [
         media: [
           m(
             "garage-door",
-            "Final show of how the garage door work.mov",
+            "Final show of how the garage door work (1).mp4",
             "Garage door in operation",
             "video",
           ),
@@ -654,7 +654,7 @@ export const PROJECTS: Project[] = [
       {
         title: "Test Print Run",
         text: "Final test print confirmed the printer was working after assembly, setup and circuit organization.",
-        media: [m("anet-a8", "Test print run.mp4", "Test print run", "video")],
+        media: [m("anet-a8", "Test print run (1).mp4", "Test print run", "video")],
       },
     ],
   },
