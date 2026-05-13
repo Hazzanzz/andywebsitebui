@@ -34,7 +34,7 @@ const m = (
   type: "image" | "video" = "image",
 ): Media => ({
   type,
-  src: `/project-media/${slug}/${file}`,
+  src: `/project-media/${slug}/${encodeURIComponent(file)}`,
   caption,
 });
 
