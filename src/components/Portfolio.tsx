@@ -538,8 +538,7 @@ function Contact() {
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--neon-violet)] to-[var(--neon-amber)] grid place-items-center"><Instagram className="w-5 h-5 text-primary-foreground" /></div>
               <div><div className="text-xs text-muted-foreground">Instagram</div><div className="text-sm font-semibold">@andyvampir1412</div></div>
             </a>
-            {/* Replace this with resume file */}
-            <a href="#" className="flex items-center gap-3 glass rounded-2xl p-4 hover-lift">
+            <a href="/Bui_Resume.pdf" download target="_blank" rel="noreferrer" className="flex items-center gap-3 glass rounded-2xl p-4 hover-lift">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[var(--neon-teal)] to-[var(--neon-blue)] grid place-items-center"><Download className="w-5 h-5 text-primary-foreground" /></div>
               <div><div className="text-xs text-muted-foreground">Resume</div><div className="text-sm font-semibold">Download PDF</div></div>
             </a>
