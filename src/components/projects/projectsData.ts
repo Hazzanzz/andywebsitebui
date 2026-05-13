@@ -284,7 +284,7 @@ export const PROJECTS: Project[] = [
         media: [
           m(
             "garage-door",
-            "Final show of how the garage door work.mp4",
+            "Final show of how the garage door work.mov",
             "Garage door in operation",
             "video",
           ),
@@ -580,7 +580,6 @@ export const PROJECTS: Project[] = [
         title: "Challenge and Time Pressure",
         text: "The biggest challenge was time — working in Grade 12 alongside college and university applications meant most build hours happened after school, with extra hours close to deadline.",
         media: [
-          m("robotics-2023", "Team member.JPEG", "Team during build"),
           m("robotics-2023", "Team member1.JPEG", "Team members"),
         ],
       },
@@ -655,7 +654,7 @@ export const PROJECTS: Project[] = [
       {
         title: "Test Print Run",
         text: "Final test print confirmed the printer was working after assembly, setup and circuit organization.",
-        media: [m("anet-a8", "Test print run.MOV", "Test print run", "video")],
+        media: [m("anet-a8", "Test print run.mp4", "Test print run", "video")],
       },
     ],
   },
